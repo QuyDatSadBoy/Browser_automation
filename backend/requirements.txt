@@ -1,0 +1,39 @@
+# ===== Web framework =====
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12
+
+# ===== DB / ORM =====
+sqlalchemy>=2.0
+aiosqlite>=0.20
+alembic>=1.13
+
+# ===== Config / validation =====
+pydantic>=2.9
+pydantic[email]>=2.9
+pydantic-settings>=2.6
+python-dotenv>=1.0
+pyyaml>=6.0
+
+# ===== Auth =====
+bcrypt>=4.0
+
+# ===== HTTP client =====
+httpx>=0.27
+
+# ===== Crawl / parse =====
+beautifulsoup4>=4.12
+selenium>=4.20
+
+# ===== Stealth browser (CloakBrowser + nodriver wrapper) =====
+cloakbrowser>=0.3.30
+nodriver>=0.50
+
+# ===== AI Browser Agent (browser-use 0.12.x + playwright) =====
+browser-use>=0.12.9
+playwright>=1.60
+
+# ===== LLM SDKs (Gemini chính, OpenAI fallback) =====
+google-genai>=1.0
+openai>=2.0
+

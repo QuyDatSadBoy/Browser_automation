@@ -1,2 +1,128 @@
+# =========================================
+# Project-specific
+# =========================================
 .github/copilot-instructions.md
 docs/
+
+# Runtime data (DB, profiles, instructions, screenshots, etc.)
+backend/data/*.db
+backend/data/*.db-journal
+backend/data/*.db-shm
+backend/data/*.db-wal
+backend/data/profiles/**/*.json
+backend/data/instructions/**/*.txt
+backend/data/emails/**/*.json
+backend/data/proxies/**/*.json
+backend/data/sms_profiles/**/*.json
+backend/data/signup_screenshots/
+backend/data/screenshots/
+!backend/data/profiles/.gitkeep
+!backend/data/instructions/.gitkeep
+
+# Logs
+backend/logs/
+frontend/logs/
+
+# Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# =========================================
+# Python
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Linters / type checkers
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================
+# Node / Next.js
+# =========================================
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Build outputs
+.turbo/
+.vercel/
+.swc/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Misc JS
+.eslintcache
+.cache/
+*.tsbuildinfo
+
+# =========================================
+# Browser automation
+# =========================================
+# Nodriver / Playwright user data dirs
+.user-data/
+.user_data/
+chrome-data/
+playwright-report/
+test-results/
+
+# =========================================
+# OS / Editor
+# =========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+

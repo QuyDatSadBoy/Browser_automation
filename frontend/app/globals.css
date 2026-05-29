@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #1E1B4B; }
+body { background: #F5F3FF; }
+
+* { -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+
+button, a, [role="button"] { cursor: pointer; }
+
+/* Smooth page transitions */
+* { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* Better focus states (WCAG AA) */
+:focus-visible {
+  outline: 2px solid #6366F1;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C7D2FE; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #818CF8; }
+
+/* Dot background pattern for auth pages */
+.bg-dot-pattern {
+  background-color: #EEF2FF;
+  background-image: radial-gradient(circle, #C7D2FE 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: box-shadow 200ms, transform 200ms;
+}
+.card-lift:hover {
+  box-shadow: 0 8px 24px 0 rgba(99,102,241,0.14), 0 2px 8px 0 rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.animate-spin-slow { animation: spin-slow 1.2s linear infinite; }
+
+@keyframes fadeIn { from { opacity:0; transform: translateY(6px); } to { opacity:1; transform: translateY(0); } }
+.animate-fade-in { animation: fadeIn 0.2s ease-out forwards; }
